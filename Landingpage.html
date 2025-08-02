@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabook Landing page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background-color: #fffdfc;
+        color: #222;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background: transparent;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        font-weight: 500;
+      }
+      .auth-buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .auth-buttons a {
+        text-decoration: none;
+        color: #f76529;
+        font-weight: 500;
+      }
+      .auth-buttons button {
+        background-color: #f76529;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2);
+      }
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10% 0px 10%;
+        height: 60%;
+        margin: 0%;
+      }
+      .hero-content {
+        max-width: 50%;
+      }
+      .hero-content h1 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.3;
+      }
+
+      .highlight {
+        color: #f76529;
+      }
+      .hero-content p {
+        color: #555;
+        margin: 20px 0;
+        font-size: 16px;
+      }
+
+      .discover-btn {
+        padding: 12px 24px;
+        border: 2px solid #f76529;
+        background: transparent;
+        color: #f76529;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .hero-image {
+        position: relative;
+      }
+      .hero-vector {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 20px;
+        width: 800px;
+        height: 200%;
+        z-index: -1;
+      }
+
+      .hero-image img {
+        width: 400px;
+      }
+
+      .badge {
+        position: absolute;
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 12px;
+        font-size: 14px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .award {
+        top: 0;
+        left: -20px;
+      }
+
+      .review {
+        bottom: 60px;
+        left: -30px;
+      }
+
+      .explore {
+        top: 40px;
+        right: 0;
+      }
+      .search-section {
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        margin-top: 30px;
+      }
+
+      .search-card {
+        display: flex;
+        gap: 30px;
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .search-item label {
+        font-weight: 600;
+        display: block;
+      }
+
+      .search-item p {
+        color: #777;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+
+      .explore-btn {
+        background-color: #f76529;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header Class="navbar">
+      <div class="logo">Trabook<span>☕</span></div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Destination</li>
+          <li>Tour</li>
+          <li>Blog</li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#">Login</a>
+        <button>SignUp</button>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Get started your exciting <span class="highlight">journey</span>
+          <br />with us.
+        </h1>
+        <p>
+          A Team of experienced tourism professionals will provide you with the
+          best advice and tips for your desire place.
+        </p>
+        <button class="discover-btn">Discover Now</button>
+      </div>
+      <div class="hero-image">
+        <div class="hero-vector">
+          <img src="/assets/Vector.png" />
+        </div>
+        <img src="/assets/Group 1000003524.png" alt="Traveler" />
+        <div class="badge award">🏆 Best Tour<br />Awards</div>
+        <div class="badge review">⭐ 27K<br />Customer Review</div>
+        <div class="badge explore">📍 Explore<br />Every corner</div>
+      </div>
+    </section>
+    <section class="search-section">
+      <div class="search-card">
+        <div class="search-item">
+          <label>Location <span>⌄</span></label>
+          <p>Where are you going</p>
+        </div>
+        <div class="search-item">
+          <label>Date <span>⌄</span></label>
+          <p>When you will go</p>
+        </div>
+        <div class="search-item">
+          <label>Guest <span>⌄</span></label>
+          <p>Number of guest</p>
+        </div>
+        <button class="explore-btn">Explore Now</button>
+      </div>
+    </section>
+  </body>
+</html>
