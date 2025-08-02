@@ -10,6 +10,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
+        align-content: center;
       }
 
       body {
@@ -88,17 +89,19 @@
         font-weight: 600;
         cursor: pointer;
       }
-      .hero-image {
-        position: relative;
-      }
+
       .hero-vector {
         position: absolute;
         top: 0;
         left: 0;
         right: 20px;
+        bottom: 100%;
         width: 800px;
         height: 200%;
         z-index: -1;
+      }
+      .hero-image {
+        position: relative;
       }
 
       .hero-image img {
@@ -163,8 +166,33 @@
         font-weight: 600;
         cursor: pointer;
       }
-      span{
-        color:#f76529;
+      span {
+        color: #f76529;
+      }
+      @media (min-width: 300px) and (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 15px;
+        }
+        .hero {
+          flex-direction: column;
+          align-items: center;
+        }
+        .hero-content {
+          text-align: center;
+        }
+        .hero-image img {
+          width: 100%;
+          margin-left: 20px;
+        }
+      }
+      @media (min-width: 300px) and (max-width: 450px) {
+        .search-card {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     </style>
   </head>
@@ -199,9 +227,12 @@
       </div>
       <div class="hero-image">
         <div class="hero-vector">
-          <img src="https://www.figma.com/design/G2ZjHX25caWhSSk6LICvc1/Landing-Page-1--Community-?node-id=1-45&t=jw4eOGNIqH8l5ei3-4" />
+          <img src="/assets/Vector.png" />
         </div>
-        <img src="https://img.freepik.com/free-photo/tourist-with-thumb-up_1368-7035.jpg" alt="Traveler" />
+        <img
+          src="http://127.0.0.1:5500/assets/Group%201000003524.png"
+          alt="Traveler"
+        />
         <div class="badge award">🏆 Best Tour<br />Awards</div>
         <div class="badge review">⭐ 27K<br />Customer Review</div>
         <div class="badge explore">📍 Explore<br />Every corner</div>
@@ -226,7 +257,3 @@
     </section>
   </body>
 </html>
-
-
-
-
